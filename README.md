@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🧠 Questify – AI Question Paper Generator
 
-## Getting Started
+Questify is an AI-powered web application that generates topic-based practice questions and full question papers for school, college, and competitive exam students. It allows users to select their domain, question types, and topics, and then automatically produces structured exam-style papers with optional answers and explanations. Generated question papers can be downloaded in PDF or TXT format for easy sharing and printing.
 
-First, run the development server:
+🚀 Features
 
-```bash
+🏫 Supports School, College, Competitive Exams
+
+🧩 Select question types
+
+MCQs
+
+Short answers
+
+Long answers
+
+Case-based questions
+
+📝 Enter multiple topics in one prompt
+
+🧠 AI-generated:
+
+Questions only
+
+Questions + answers
+
+Questions + answers + explanations
+
+📄 Download options:
+
+PDF
+
+TXT
+
+🎯 Question paper format with sections and marks distribution
+
+📱 Fully responsive web interface
+
+🛠️ Tech Stack
+
+Frontend
+
+React / Next.js
+
+Tailwind CSS
+
+Backend
+
+Node.js / Express
+
+AI
+
+Large Language Model API (OpenAI or equivalent)
+
+Database
+
+MongoDB / PostgreSQL
+
+File generation
+
+jsPDF / pdf-lib / Puppeteer (PDF)
+
+Node FS / Blob API (TXT)
+
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/questify.git
+cd questify
+
+2️⃣ Install dependencies
+
+Frontend:
+
+cd frontend
+npm install
+
+
+Backend:
+
+cd backend
+npm install
+
+3️⃣ Add environment variables
+
+Create .env in backend:
+
+AI_API_KEY=your_key_here
+PORT=5000
+
+4️⃣ Run the app
+
+Frontend:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm start
 
-## Learn More
+🎯 How It Works
 
-To learn more about Next.js, take a look at the following resources:
+Select domain (School / College / Competitive exam)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Choose class, course, semester, or exam
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Enter topics (comma-separated)
 
-## Deploy on Vercel
+Choose question types
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Select whether you need answers/explanations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Click Generate
+
+Download as PDF or TXT
+
+🤝 Contribution
+
+Pull requests are welcome!
+For major changes, please open an issue to discuss what you’d like to modify.
